@@ -39,4 +39,5 @@ def turn(board)
     turn(board)
   else
     move(board, converted_input, character = "X")
+  end  
 end  
