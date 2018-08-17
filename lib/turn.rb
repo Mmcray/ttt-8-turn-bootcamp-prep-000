@@ -39,6 +39,6 @@ def turn(board)
   if valid_move?(board, converted_input) != true
     turn(board)
   else
-    move(display_board, converted_input, character = "X")
+    move(board, converted_input, character = "X")
   end  
 end  
