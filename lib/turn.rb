@@ -33,4 +33,8 @@ end
 
 def turn(board)
   puts "Please enter 1-9"
+  get user_input
+  if user_input !== true
+    puts "Please input a valid number"
+    get user_input
 end  
