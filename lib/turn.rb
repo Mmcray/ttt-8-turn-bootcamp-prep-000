@@ -36,7 +36,7 @@ def turn(board)
   user_input = gets.chomp
   converted_input = input_to_index(user_input)
   puts converted_input
-  if converted_input != true
+  if valid_move?(board, converted_input) != true
     turn(board)
   else
     move(board, converted_input, character = "X")
