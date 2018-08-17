@@ -34,7 +34,9 @@ end
 def turn(board)
   puts "Please enter 1-9"
   get user_input
-  if user_input !== true
+  input_to_index(user_input)
+  if converted_input !== true
     puts "Please input a valid number"
     get user_input
+  else   
 end  
