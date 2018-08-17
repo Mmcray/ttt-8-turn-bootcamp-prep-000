@@ -35,6 +35,7 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.chomp
   converted_input = input_to_index(user_input)
+  puts converted_input
   if converted_input != true
     turn(board)
   else
