@@ -36,7 +36,7 @@ def turn(board)
   get user_input
   input_to_index(user_input)
   if converted_input !== true
-    puts "Please input a valid number"
-    get user_input
-  else   
+    turn(board)
+  else
+    move(board, converted_input, character = "X")
 end  
